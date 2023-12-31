@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  background-color: #f3f5f9;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+.container {
+  max-width: 1150px;
+  margin-top: -5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.container .left-container {
+  padding-right: 2rem;
+}
+
+.container .left-container .logo img {
+  margin-top: -4rem;
+  width: 20rem;
+}
+.container .left-container .text {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-left: 1.7rem;
+  width: 30rem;
+}
+.container .right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .right-container form {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.container .right-container .email #email {
+  width: 22rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #ccc;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.container .right-container .email #email:focus {
+  outline: none;
+  border: 1px solid #1877f2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .right-container .email #email::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container .right-container .password #password {
+  width: 22rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #ccc;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.container .right-container .password #password:focus {
+  outline: none;
+  border: 1px solid #1877f2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.container .right-container .password #password::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container .right-container .login-btn input {
+  width: 22rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #1877f2;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.container .right-container .login-btn input:hover {
+  background-color: #166fe5;
+}
+.container .right-container .forgot-password {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  color: #2f55d4;
+  cursor: pointer;
+}
+
+.container .right-container .forgot-password a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  color: #2f55d4;
+  cursor: pointer;
+  text-decoration: none;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid #ccc;
+}
+.container .right-container .forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.container .right-container .create-account {
+  background-color: #42b72a;
+  padding: 0.7rem 2rem;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.container .right-container .create-account a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.create-a-page {
+  font-size: 1rem;
+  margin: 0.5rem;
+  color: #000;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.create-a-page a {
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+.create-a-page a:hover {
+  text-decoration: underline;
+}
+.language {
+  font-size: 0.8rem;
+  text-align: start;
+  padding: 2rem 15rem 2rem 15rem;
+}
+.language a {
+  padding: 0.5rem;
+  color: #000;
+}
+.email-error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin: 0.1rem;
+}
+.password-error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin: 0.1rem;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .header {
+    margin-top: -2rem;
+    overflow: hidden;
+  }
+  .container .left-container {
+    display: none;
+  }
+  .container .right-container form {
+    padding: 0rem;
+    margin: 5rem;
+  }
+  .container .right-container .email #email {
+    width: 19rem;
+    height: 3rem;
+    padding: 0.7rem;
+    margin: 0.4rem;
+  }
+  .container .right-container .email #email::placeholder {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .container .right-container .password #password {
+    width: 19rem;
+    height: 3rem;
+    padding: 0.7rem;
+    margin: 0.4rem;
+  }
+  .container .right-container .password #password::placeholder {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .container .right-container .login-btn input {
+    width: 19rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.4rem;
+  }
+  .container .right-container .forgot-password a {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+  }
+  .container .right-container .create-account {
+    padding: 0.7rem 1.5rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  .create-a-page {
+    font-size: 0.9rem;
+    margin-top: -3.5rem;
+  }
+  .language {
+    display: none;
+  }
+}
