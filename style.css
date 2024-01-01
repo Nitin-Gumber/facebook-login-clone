@@ -7,11 +7,13 @@
   --bg-color: #f3f5f9;
   --bg2-color: #fff; 
   --bg3-color: #42b72a;
+  --bg5-color: #f5f6f7;
   --bg4-color: #fffbe2;
   --border-color: #ccc;
   --border2-blue-color: #1877f2;
   --black-color: #000;
   --red-color: #ff0000; 
+  --slateblue-color: #576b95;
 }
 
 body {
