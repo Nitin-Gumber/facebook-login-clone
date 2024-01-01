@@ -1,0 +1,153 @@
+/* mobile */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: var(--bg2-color);
+    }
+    .header {
+      overflow: hidden;
+    }
+    .for-mobile {
+      visibility: visible;
+      background-color: var(--bg4-color);
+      padding: 1rem;
+      text-align: start;
+      color: var(--slateblue-color);
+      font-size: 0.9rem;
+    }
+  
+    .container {
+      margin-top: -20rem;
+      display: flex;
+      gap: 0rem;
+      flex-direction: column;
+    }
+    .container .left-container .logo img {
+      width: 7rem;
+      margin-top: -3rem;
+    }
+    .container .left-container .text {
+      display: none;
+    }
+  
+    .container .right-container form {
+      padding: 0rem;
+      margin: 0.5rem 1rem;
+      border-radius: 0rem;
+      box-shadow: none;
+    }
+    .container .right-container .email #email {
+      width: 20rem;
+      height: 2.6rem;
+      padding: 0.7rem;
+      margin: 0.1rem;
+      border-radius: 0.2rem;
+      background: var(--bg5-color);
+    }
+    .container .right-container .email #email::placeholder {
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+  
+    .container .right-container .password #password {
+      width: 20rem;
+      height: 2.6rem;
+      padding: 0.7rem;
+      margin: 0.1rem;
+      border-radius: 0.2rem;
+      background: var(--bg5-color);
+    }
+    .container .right-container .password #password::placeholder {
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+    .container .right-container .login-btn input {
+      width: 20rem;
+      height: 2.6rem;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0.4rem;
+      border-radius: 0.2rem;
+    }
+    .or {
+      margin-top: 0.4rem;
+      background-color: var(--bg2-color);
+      padding: 0.5rem;
+      visibility: visible;
+    }
+    .container .right-container .forgot-password a {
+      padding-left: 5rem;
+      padding-right: 5rem;
+      padding-bottom: 2rem;
+      margin: 0rem;
+    }
+    .container .right-container .create-account {
+      padding: 0.5rem 4rem;
+      margin-top: 1rem;
+      margin-bottom: 0.8rem;
+      background-color: var(--bg2-color);
+      border: var(--border-color) 1px solid;
+      border-radius: 0.2rem;
+    }
+    .container .right-container .create-account a {
+      color: var(--black-color);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .create-a-page {
+      display: none;
+    }
+    .lan-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+      gap: 7rem;
+      margin-top: -17rem;
+    }
+    .lan-container .con-left {
+      width: 4rem;
+    }
+    .lan-container .con-left a {
+      font-size: 0.8rem;
+      color: var(--slateblue-color);
+      text-decoration: none;
+      padding: 1px;
+    }
+    .lan-container .con-left a:nth-child(1) {
+      color: #90949c;
+      font-weight: bold;
+    }
+  
+    .lan-container .con-right {
+      width: 3rem;
+    }
+    .lan-container .con-right a {
+      font-size: 0.8rem;
+      color: var(--slateblue-color);
+      text-decoration: none;
+      padding: 1px;
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer .upper-con ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .footer .upper-con ul li {
+      list-style: none;
+      margin: 0.4rem;
+      font-size: 0.7rem;
+      color: var(--slateblue-color);
+    }
+    .footer .lower-con p {
+      font-size: 0.7rem;
+      color: var(--slateblue-color);
+    }
+  }

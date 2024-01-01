@@ -3,9 +3,20 @@
   padding: 0px;
   box-sizing: border-box;
 }
+:root{
+  --bg-color: #f3f5f9;
+  --bg2-color: #fff; 
+  --bg3-color: #42b72a;
+  --bg4-color: #fffbe2;
+  --border-color: #ccc;
+  --border2-blue-color: #1877f2;
+  --black-color: #000;
+  --red-color: #ff0000; 
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f3f5f9;
+  background-color: var(--bg-color);
   overflow: hidden;
 }
 .for-mobile {
@@ -14,16 +25,18 @@ body {
 .header {
   display: flex;
   align-items: center;
-  min-height: 100vh;
   justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .container {
   max-width: 1150px;
-  margin-top: -5rem;
+  margin-top: -4rem;
   padding: 0.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3rem;
 }
 .container .left-container {
@@ -47,7 +60,7 @@ body {
   flex-direction: column;
 }
 .container .right-container form {
-  background-color: #fff;
+  background-color: var(--bg2-color);
   border-radius: 0.5rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -58,14 +71,15 @@ body {
 .container .right-container .email #email {
   width: 22rem;
   height: 3rem;
+  padding: 1rem 7rem 1rem 0rem;
   border-radius: 0.5rem;
-  border: 0.5px solid #ccc;
+  border: 0.5px solid var(--border-color);
   padding: 1rem;
   margin: 0.5rem;
 }
 .container .right-container .email #email:focus {
   outline: none;
-  border: 1px solid #1877f2;
+  border: 1px solid var(--border2-blue-color);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -77,13 +91,13 @@ body {
   width: 22rem;
   height: 3rem;
   border-radius: 0.5rem;
-  border: 0.5px solid #ccc;
+  border: 0.5px solid var(--border-color);
   padding: 1rem;
   margin: 0.5rem;
 }
 .container .right-container .password #password:focus {
   outline: none;
-  border: 1px solid #1877f2;
+  border: 1px solid var(--border2-blue-color);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .container .right-container .password #password::placeholder {
@@ -95,21 +109,21 @@ body {
   height: 3rem;
   border-radius: 0.5rem;
   border: none;
-  background-color: #1877f2;
-  color: #fff;
+  background-color: var(--border2-blue-color);
+  color: var(--bg2-color);
   font-size: 1.2rem;
   font-weight: 800;
   margin: 0.5rem;
   cursor: pointer;
 }
 .container .right-container .login-btn input:hover {
-  background-color: #166fe5;
+  background-color: var(--border2-blue-color);
 }
 .container .right-container .forgot-password {
   font-size: 0.8rem;
   font-weight: 500;
   margin: 0.5rem;
-  color: #2f55d4;
+  color: var(--border2-blue-color);
   cursor: pointer;
 }
 
@@ -117,13 +131,13 @@ body {
   font-size: 0.9rem;
   font-weight: 500;
   margin: 0.5rem;
-  color: #2f55d4;
+  color: var(--border2-blue-color);
   cursor: pointer;
   text-decoration: none;
   padding-left: 6rem;
   padding-right: 6rem;
   padding-bottom: 1rem;
-  border-bottom: 0.5px solid #ccc;
+  border-bottom: 0.5px solid var(--border-color);
 }
 .container .right-container .forgot-password a:hover {
   text-decoration: underline;
@@ -133,30 +147,29 @@ body {
 }
 
 .container .right-container .create-account {
-  background-color: #42b72a;
+  background-color: var(--bg3-color);
   padding: 0.7rem 2rem;
   margin-top: 1.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #fff;
   cursor: pointer;
   margin-bottom: 1rem;
 }
 .container .right-container .create-account a {
   text-decoration: none;
-  color: #fff;
+  color: var(--bg2-color);
   font-weight: 600;
 }
 .create-a-page {
   font-size: 1rem;
   margin: 0.5rem;
-  color: #000;
+  color: var(--black-color);
   margin-top: 1.5rem;
   text-align: center;
 }
 .create-a-page a {
-  color: #000;
+  color: var(--black-color);
   cursor: pointer;
   font-weight: 600;
   text-decoration: none;
@@ -165,12 +178,12 @@ body {
   text-decoration: underline;
 }
 .email-error-message {
-  color: red;
+  color: var(--red-color);
   font-size: 0.8rem;
   margin: 0.1rem;
 }
 .password-error-message {
-  color: red;
+  color: var(--red-color);
   font-size: 0.8rem;
   margin: 0.1rem;
 }
@@ -179,158 +192,4 @@ body {
 }
 .footer {
   display: none;
-}
-
-/* mobile */
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: #fff;
-  }
-  .header {
-    overflow: hidden;
-  }
-  .for-mobile {
-    visibility: visible;
-    background-color: #fffbe2;
-    padding: 1rem;
-    text-align: start;
-    color: #576b95;
-    font-size: 0.9rem;
-  }
-
-  .container {
-    margin-top: -20rem;
-    display: flex;
-    gap: 0rem;
-    flex-direction: column;
-  }
-  .container .left-container .logo img {
-    width: 7rem;
-    margin-top: -3rem;
-  }
-  .container .left-container .text {
-    display: none;
-  }
-
-  .container .right-container form {
-    padding: 0rem;
-    margin: 0.5rem 1rem;
-    border-radius: 0rem;
-    box-shadow: none;
-  }
-  .container .right-container .email #email {
-    width: 20rem;
-    height: 2.6rem;
-    padding: 0.7rem;
-    margin: 0.1rem;
-    border-radius: 0.2rem;
-    background: #f5f6f7;
-  }
-  .container .right-container .email #email::placeholder {
-    font-size: 0.9rem;
-    font-weight: 400;
-  }
-
-  .container .right-container .password #password {
-    width: 20rem;
-    height: 2.6rem;
-    padding: 0.7rem;
-    margin: 0.1rem;
-    border-radius: 0.2rem;
-    background: #f5f6f7;
-  }
-  .container .right-container .password #password::placeholder {
-    font-size: 0.9rem;
-    font-weight: 400;
-  }
-  .container .right-container .login-btn input {
-    width: 20rem;
-    height: 2.6rem;
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 0.4rem;
-    border-radius: 0.2rem;
-  }
-  .or {
-    margin-top: 0.4rem;
-    background-color: #fff;
-    padding: 0.5rem;
-    visibility: visible;
-  }
-  .container .right-container .forgot-password a {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-bottom: 2rem;
-    margin: 0rem;
-  }
-  .container .right-container .create-account {
-    padding: 0.5rem 4rem;
-    margin-top: 1rem;
-    margin-bottom: 0.8rem;
-    background-color: #fff;
-    border: #ccc 1px solid;
-    border-radius: 0.2rem;
-  }
-  .container .right-container .create-account a {
-    color: #000;
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-  .create-a-page {
-    display: none;
-  }
-  .lan-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    gap: 7rem;
-    margin-top: -17rem;
-  }
-  .lan-container .con-left {
-    width: 4rem;
-  }
-  .lan-container .con-left a {
-    font-size: 0.8rem;
-    color: #576b95;
-    text-decoration: none;
-    padding: 1px;
-  }
-  .lan-container .con-left a:nth-child(1) {
-    color: #90949c;
-    font-weight: bold;
-  }
-
-  .lan-container .con-right {
-    width: 3rem;
-  }
-  .lan-container .con-right a {
-    font-size: 0.8rem;
-    color: #576b95;
-    text-decoration: none;
-    padding: 1px;
-  }
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .footer .upper-con ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-  }
-  .footer .upper-con ul li {
-    list-style: none;
-    margin: 0.4rem;
-    font-size: 0.7rem;
-    color: #576b95;
-  }
-  .footer .lower-con p {
-    font-size: 0.7rem;
-    color: #576b95;
-  }
 }

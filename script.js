@@ -3,6 +3,7 @@ const emailField = document.querySelector("#email");
 const emailError = document.querySelector(".email-error-message");
 const passwordField = document.querySelector("#password");
 const passwordError = document.querySelector(".password-error-message");
+const currentYear =document.querySelector(".current-year")
 
 function validateEmail() {
   if (
@@ -34,3 +35,8 @@ function validatePassword() {
 // Add event listeners
 emailField.addEventListener("input", validateEmail);
 passwordField.addEventListener("input", validatePassword);
+
+// Display current year
+const date = new Date()
+const year = date.getFullYear()
+currentYear.textContent = year

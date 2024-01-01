@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css">
   </head>
   <body>
     <p class="for-mobile">
@@ -44,6 +45,7 @@
                   name="email"
                   id="email"
                   placeholder="Mobile number or email address"
+                  autocomplete="given-email"
                 />
               </div>
               <span class="email-error-message"></span>
@@ -53,6 +55,7 @@
                   name="password"
                   id="password"
                   placeholder="Password"
+                  autocomplete="off"
                 />
               </div>
               <span class="password-error-message"></span>
@@ -97,7 +100,7 @@
         </ul>
       </div>
       <div class="lower-con">
-        <p>Meta © 2024</p>
+        <p>Meta © <span class="current-year"></span></p>
       </div>
     </div>
     <script src="script.js"></script>
