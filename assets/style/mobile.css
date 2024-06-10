@@ -1,5 +1,5 @@
 /* mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1020px) {
     body {
       background-color: var(--bg2-color);
     }
@@ -100,12 +100,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      justify-content: center;
-      gap: 7rem;
+      justify-content: space-between;
+      /* gap: 7rem; */;
       margin-top: -17rem;
     }
     .lan-container .con-left {
       width: 4rem;
+      margin-left: 4rem;
     }
     .lan-container .con-left a {
       font-size: 0.8rem;
@@ -120,6 +121,7 @@
   
     .lan-container .con-right {
       width: 3rem;
+      margin-right: 3rem;
     }
     .lan-container .con-right a {
       font-size: 0.8rem;
